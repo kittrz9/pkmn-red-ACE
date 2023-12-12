@@ -23,6 +23,25 @@
 ; Revive x46
 ; HP Up x175
 ; Water Stone x201
+;
+; if you need to set up the writer again
+; (like if you messed up writing the data)
+; you can have a stack of 33 pokeballs elsewhere
+; in your inventory and swap that stack with the
+; PP Ups. then toss enough of addressLow (5th item)
+; to get 1 of that item. then use 8F and that will
+; set that stack's quantity to 0. swap out the
+; 4th and 5th items and repeat from the toss 1
+; item step. you should then have 0 in all stacks,
+; from there just replace the 6th slot and
+; toss enough items to get to your desired address
+; and value
+;
+; if you just need to change addressLow and don't
+; care if you write a byte to your current address,
+; you can just swap items 3 and 5, toss enough from
+; item 5 to get only 1, then run 8f again and swap
+; them back
 
 
 SECTION "asdf", ROM0
