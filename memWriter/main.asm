@@ -18,7 +18,7 @@
 ; Lemonade x(value)
 ; Carbos x(high byte)
 ; X Accuracy x(low byte)
-; PP Up x33
+; PP Up x33 (item id $32, not the normal one, use 8F to get this one)
 ; Calcium x211
 ; Revive x46
 ; HP Up x175
