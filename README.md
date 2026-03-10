@@ -35,10 +35,7 @@ your program should then be assembled into a file with the name `$PRG_NAME.prg` 
 
 you should use whatever hex editor you prefer (such as `xxd` on linux) to view your program.<br>
 
-to convert your program into items, you need to get a list of all 255 items in the game separated by commas and put it into a file named `itemList.txt`<br>
-then you should just be able to run `prgToItems.py` like this, once again replacing `$PRG_NAME` with your folder's name<br>
+to convert your program into a list of items run `prgToItems.py` like this<br>
 ```sh
 ./prgToItems.py $PRG_NAME
 ```
-
-I'm not sure if I should put the `itemList.txt` file in this repo since it's taken from <https://glitchcity.wiki/wiki/The_Big_HEX_List> which says "This list is for use on Glitch City Laboratories ONLY."<br>
