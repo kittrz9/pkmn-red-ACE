@@ -52,12 +52,12 @@ def generateItemList():
 				elif id > 0xC3 and id < 0xFF:
 					str = ""
 					number = 0
-					if count > 0xC8:
+					if id > 0xC8:
 						str += "T"
-						number = count - 0xC8
+						number = id - 0xC8
 					else:
 						str += "H"
-						number = count - 0xC3
+						number = id - 0xC3
 					str += "M{:02d}".format(number)
 
 				items[id % 256] = str
